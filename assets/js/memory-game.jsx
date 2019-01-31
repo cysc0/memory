@@ -77,12 +77,12 @@ class Memory extends React.Component {
           // otherwise flash the newly clicked tile briefly, then reset both
           // current guess and previous guess to non-displayed
           // this.state.board[item["idx"]].display = true;
+          this.state.clickCount = this.state.clickCount + 1;
           this.flicker(item);
           this.state.sleeping = true;
           this.sleep(1000).then(() => {
             this.state.board[item["idx"]].display = false;
             this.state.board[this.state.storedGuess["idx"]].display = false;
-            this.state.clickCount = this.state.clickCount + 1;
             this.state.storedGuess = null; // reset our guess register
             this.state.sleeping = false;
             this.setState(this.state);
