@@ -2,28 +2,42 @@
 
 @import "~milligram/dist/milligram";
 
-.gameButton {
-    flex-wrap: nowrap;
-    height:100%;
-}
-
 .gameRestart {
     flex-wrap: nowrap;
     height:100%;
+    margin: 4px;
     background-color: cornflowerblue;
     border: cornflowerblue;
 }
 
-.gameRow {
-    flex-wrap: nowrap;
+.gameCounter {
+    display: inline;
 }
 
-.gameBoard {
-    flex-wrap: nowrap;
+.gameButton {
+    /* font-size: 200%; */
+    font-size: 2rem;
+    height: 4em;
+    width: 4em;
+    margin: 4px;
 }
 
-.gameBr {
-    visibility:hidden;
-    margin: 0px;
-    padding: 0px;
+#tileContainer {
+    max-width: 24em;
+    flex-wrap: none;
+}
+
+.gameButton.discovered {
+    pointer-events: none;
+    background-color: palevioletred;
+    border: palevioletred;
+    pointer-events: none;
+}
+
+#gameCounter {
+    text-align: right;
+    width: 8em;
+    margin: 1px;
+    padding: 1px;
+    pointer-events: none;
 }
