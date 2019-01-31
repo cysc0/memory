@@ -17,3 +17,9 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+## My changes
+
+assets/css/app.css - custom css for memory game  
+assets/js/memory-game.jsx  
+(nginx/service files, elixir config files)

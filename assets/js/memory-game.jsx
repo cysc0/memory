@@ -9,7 +9,7 @@ export default function game_init(root) {
 class Memory extends React.Component {
   // Define our initial state (unordered board, 0 clicks, storedGuess null)
   // Scramble the board
-;  constructor(props) {
+  constructor(props) {
     super(props);
     this.state = {
       board: [
@@ -131,9 +131,13 @@ class Memory extends React.Component {
     // return tiles, restart button, and counter
     return (
       <div>
-        <div id="tileContainer">
-          {tileGrid}
-          {menuRow}
+        <div className="row" id="tileContainer">
+          <div className="column">
+            {tileGrid}
+          </div>
+          <div className="column">
+            {menuRow}
+          </div>
         </div>
       </div>
     );

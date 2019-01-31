@@ -12,6 +12,7 @@
 
 .gameCounter {
     display: inline;
+    margin: 4px;
 }
 
 .gameButton {
@@ -20,11 +21,8 @@
     height: 4em;
     width: 4em;
     margin: 4px;
-}
-
-#tileContainer {
-    max-width: 24em;
     flex-wrap: none;
+    display: inline-block;
 }
 
 .gameButton.discovered {
@@ -34,8 +32,13 @@
     pointer-events: none;
 }
 
+#tileContainer {
+    max-width: 24em;
+    flex-wrap: none;
+    display: inline-block;
+}
+
 #gameCounter {
-    text-align: right;
     width: 8em;
     margin: 1px;
     padding: 1px;
